@@ -1,0 +1,135 @@
+/* Configs Gerais  -------------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    font-size: 62.5%; /* 1 rem = 16px */
+   
+    --background-color:hsl(227, 60%, 97%);
+    --primary-color:hsl(213, 84%, 24%);
+
+    --font-color:hsl(210, 9%, 31%);
+
+}
+
+body{
+    width: min(38rem, 100%);
+    background-color: var(--background-color);
+    margin-inline: auto;
+    padding-inline: 1.6rem;
+    overflow: overlay;
+}
+
+/* Header -------------- */
+header h1{
+    color: var(--primary-color);
+    
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2.4rem;
+    margin-bottom: 8rem;
+}
+
+/* Section home -------------- */
+#home .content textarea{
+    border-style: none;
+    background-color: transparent;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+#home .content textarea:focus{
+    outline: none;
+    width: min(38rem,100%);
+}
+
+#home .content textarea::placeholder{
+    color: var(--primary-color);
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+#home .alert{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    font-size: 1.2rem;
+    line-height: 150%;
+    font-weight: 400;
+    margin-top: 6rem;
+    margin-bottom: 1.6rem;
+}
+
+/* Section buttons  -------------*/
+
+#buttons .container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.buttons button{
+    padding: 2.4rem;
+    width: 32.7rem;
+    border-radius: 24px;
+    border: solid 1px var(--primary-color);
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+}
+
+.buttons button:nth-child(1){
+    background-color: var(--primary-color);
+    color: white;
+}
+.buttons button:nth-child(2){
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+/* Section result -------------- */
+
+#result .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-inline: 3.2rem;
+    text-align: center;
+    
+    margin-inline: auto;
+    margin-top: 6rem;
+    background-color: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    width: 327px;
+    height: 186px;
+}
+
+#result .container h1{
+    color: #343A40;
+    margin-bottom: 1.6rem;
+    font-weight: 700;
+    line-height: 120%;
+    font-size: 2.4rem;
+}
+
+#result .container p{
+    color: var(--font-color);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 150%;
+}
